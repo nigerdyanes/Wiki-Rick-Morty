@@ -1,0 +1,22 @@
+<div class="container mt-4">
+  <div class="h-100 p-5 text-white bg-dark rounded-3">
+    <h2>Wiki Rick y Morty</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos deserunt non fuga aspernatur eligendi? Fugiat a, libero architecto debitis nostrum asperiores provident placeat repellendus nam reiciendis, minus velit omnis! Tenetur.</p>
+    <button class="btn btn-outline-light" type="button">Characters</button>
+  </div>
+</div>
+
+<div class="container main">
+  <div class="row">
+    <div *ngFor="let character of characters" class="col mt-2">
+      <div class="card" style="width: 19rem;">
+        <img [src]="character.image" class="card-img-top" [alt]="character.name">
+        <div class="card-body">
+           <h5>{{ character.name }} | {{ character.status }}</h5>
+          <a href="#" class="btn btn-primary">More info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
